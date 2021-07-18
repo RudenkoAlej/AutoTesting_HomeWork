@@ -47,9 +47,6 @@ public class Main {
         account.credit(20);
         account.debit(80);
         account.debit(50);
-
-
-        System.out.println("Git Check");
     }
 
 
