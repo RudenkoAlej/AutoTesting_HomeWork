@@ -7,6 +7,11 @@ public class Phone {
 
     }
 
+    public Phone(int price, int performance) {
+        this.price = price;
+        this.performance = performance;
+    }
+
     public int getPrice() {
         return price;
     }
@@ -20,11 +25,6 @@ public class Phone {
     }
 
     public void setPerformance(int performance) {
-        this.performance = performance;
-    }
-
-    public Phone(int price, int performance) {
-        this.price = price;
         this.performance = performance;
     }
 
