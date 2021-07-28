@@ -3,12 +3,10 @@ import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 
-import java.util.Arrays;
 
 @RunWith(DataProviderRunner.class)
 public class BankAccountTstNGDataProvider {
