@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/02_Lesson/02_Lesson.iml" filepath="$PROJECT_DIR$/02_Lesson/02_Lesson.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_Lesson/03_Lesson.iml" filepath="$PROJECT_DIR$/03_Lesson/03_Lesson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoTesting_HomeWork.iml" filepath="$PROJECT_DIR$/AutoTesting_HomeWork.iml" />
     </modules>
   </component>
 </project>

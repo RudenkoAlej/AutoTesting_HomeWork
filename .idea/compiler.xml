@@ -10,5 +10,10 @@
         <module name="03_Lesson" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="02_Lesson" target="7" />
+      <module name="03_Lesson" target="1.8" />
+      <module name="AutoTesting_HomeWork" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
