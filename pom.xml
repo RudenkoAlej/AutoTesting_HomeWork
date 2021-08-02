@@ -11,6 +11,7 @@
     <modules>
         <module>02_Lesson</module>
         <module>03_Lesson</module>
+        <module>04_Lesson</module>
 
     </modules>
     <build>
