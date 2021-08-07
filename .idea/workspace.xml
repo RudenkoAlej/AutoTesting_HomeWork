@@ -29,11 +29,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f872f96-3ded-4ad7-96b3-84674eac08ee" name="Default Changelist" comment="Libraries update">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_Lesson/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_Lesson/src/main/java/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04_Lesson/src/test/java/RegistrationPageTest.java" afterDir="false" />
+    <list default="true" id="7f872f96-3ded-4ad7-96b3-84674eac08ee" name="Default Changelist" comment="Registration Page selectors">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/model/AccountBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/SignInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/attributes/AlreadyRegistered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/attributes/CreateAccountAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/utils/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/utils/TestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/main/resources/resource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/test/java/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_Lesson/src/test/java/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -85,16 +95,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationPageTest">
-    <configuration name="BankAccountTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RegistrationTest.checkErrorMessageOnRegistration">
     <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="03_Lesson" />
       <useClassPathOnly />
@@ -146,26 +147,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationPageTest.canSelectSizeLForTShirt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="04_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationPageTest" />
-      <option name="METHOD_NAME" value="canSelectSizeLForTShirt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationPageTest.checkElementsVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="04_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationPageTest" />
-      <option name="METHOD_NAME" value="checkElementsVisible" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegistrationPageTest.checkElementsVisibleCss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="04_Lesson" />
       <option name="PACKAGE_NAME" value="" />
@@ -176,23 +157,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="05_Lesson" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.checkErrorMessageOnRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="05_Lesson" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="checkErrorMessageOnRegistration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.checkErrorMessageOnRegistrationChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="05_Lesson" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="checkErrorMessageOnRegistrationChain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.BankAccountTest (1)" />
       <item itemvalue="JUnit.BankAccountTestDataProvider" />
       <item itemvalue="JUnit.BankAccountTest" />
       <item itemvalue="JUnit.BankAccountTstNGDataProvider" />
       <item itemvalue="JUnit.RegistrationPageTest" />
-      <item itemvalue="JUnit.RegistrationPageTest.canSelectSizeLForTShirt" />
       <item itemvalue="JUnit.RegistrationPageTest.checkElementsVisibleCss" />
-      <item itemvalue="JUnit.RegistrationPageTest.checkElementsVisible" />
+      <item itemvalue="JUnit.RegistrationTest.checkErrorMessageOnRegistration" />
+      <item itemvalue="JUnit.RegistrationTest" />
+      <item itemvalue="JUnit.RegistrationTest.checkErrorMessageOnRegistrationChain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationTest.checkErrorMessageOnRegistration" />
+        <item itemvalue="JUnit.RegistrationTest" />
+        <item itemvalue="JUnit.RegistrationTest.checkErrorMessageOnRegistrationChain" />
         <item itemvalue="JUnit.RegistrationPageTest" />
         <item itemvalue="JUnit.RegistrationPageTest.checkElementsVisibleCss" />
-        <item itemvalue="JUnit.RegistrationPageTest.checkElementsVisible" />
-        <item itemvalue="JUnit.RegistrationPageTest.canSelectSizeLForTShirt" />
-        <item itemvalue="JUnit.BankAccountTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627479378605</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Registration Page selectors">
+      <created>1627892350347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627892350347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +302,8 @@
     <MESSAGE value="Update libraries and .lst files" />
     <MESSAGE value="Gitignore update with adding ./idea folder" />
     <MESSAGE value="Libraries update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Libraries update" />
+    <MESSAGE value="Registration Page selectors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registration Page selectors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627821620854">
@@ -293,10 +311,18 @@
     </state>
     <state x="447" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821620854" />
     <state x="447" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1627505958236" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1628286100689">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628286100689" />
     <state x="816" y="320" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1627426250012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="816" y="320" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1627426250012" />
+    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628372889091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1628372889091" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1627427382827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -305,60 +331,68 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="861" y="218" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1627505277010" />
-    <state x="966" y="308" key="FileChooserDialogImpl" timestamp="1627464729477">
+    <state x="966" y="308" key="FileChooserDialogImpl" timestamp="1628286562306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627464729477" />
-    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1627425672159" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1627856939999">
+    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628286562306" />
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom" timestamp="1628372983194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821722974" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627856939999" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1627856939998">
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628372983194" />
+    <state width="1493" height="294" key="GridCell.Tab.0.center" timestamp="1628372983194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821722974" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627856939998" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1627856939998">
+    <state width="1493" height="294" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628372983194" />
+    <state width="1493" height="294" key="GridCell.Tab.0.left" timestamp="1628372983194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091450" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821722974" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627856939998" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1627856939999">
+    <state width="1493" height="294" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628372983194" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right" timestamp="1628372983194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821722974" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627856939999" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1627662756853">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628372983194" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1628339091452">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091452" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627662756853" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627512467416" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1627662756852">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628290359493" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1628339091451">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627662756852" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1627512467416" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1627662756852">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628290359493" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1628339091451">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627662756852" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1627512467416" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1627662756852">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628290359493" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1628339091451">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1628339091451" />
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627662756852" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1627512467416" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628290359493" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1627464203716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627464203716" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627426656216" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1627479398306">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1627892367233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627479398306" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627892367233" />
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1627424128360">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,24 +401,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627479473650" />
-    <state x="209" y="73" key="new project wizard" timestamp="1627480128843">
+    <state x="209" y="73" key="new project wizard" timestamp="1628026644556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="73" key="new project wizard/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627480128843" />
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1628026644556" />
     <state x="469" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1627652197214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="469" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627652197214" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/04_Lesson/src/test/java/RegistrationPageTest.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
