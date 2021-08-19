@@ -21,14 +21,37 @@ public class TestHelper {
         return rn.nextInt();
     }
 
-    public WebElement waitOnElement(int seconds, String xpath) {
+    public void waitForSeconds(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public WebElement waitElementClickable(int seconds, String xpath) {
         return (new WebDriverWait(driver, seconds)).until(
                 ExpectedConditions.elementToBeClickable(By.xpath(xpath))
         );
     }
 
+    public WebElement waitElementClickable(int seconds, WebElement element) {
+        return (new WebDriverWait(driver, seconds)).until(
+                ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public WebElement waitElementDisplayed(int seconds, WebElement element) {
+        return (new WebDriverWait(driver, seconds)).until(
+                ExpectedConditions.visibilityOf(element));
+    }
+
     public void scrollToItem(WebElement el){
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", el);
+    }
+
+    public boolean isElementSelected(WebElement el) {
+        String s = el.getAttribute("class");
+        return s.equals("selected");
     }
 }
