@@ -20,14 +20,14 @@ public class CreateAccountAttribute {
     }
 
     public CreateAccountAttribute typeEmail(String email){
-        emailField = helper.waitOnElement(30, "//*[@id='email_create']");
+        emailField = helper.waitElementClickable(2, "//*[@id='email_create']");
         emailField.clear();
         emailField.sendKeys(email);
         return this;
     }
 
     public RegistrationPage clickCreateAnAccount(){
-        createAccountBtn = helper.waitOnElement(30, "//*[@id='SubmitCreate']");
+        createAccountBtn = helper.waitElementClickable(2, "//*[@id='SubmitCreate']");
         createAccountBtn.click();
         return new RegistrationPage(driver);
     }

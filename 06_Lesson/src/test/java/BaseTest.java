@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
     public WebDriver driver;
-    private final Properties config = Config.loadProperties("resource.properties");
+    public final Properties config = Config.loadProperties("resource.properties");
 
     @Before
     public void setUp() {

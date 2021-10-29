@@ -20,9 +20,9 @@ public class RegistrationPage {
 
     private void selectGender(String gender) {
         if (gender.equals("Mr.")) {
-            helper.waitOnElement(30,"//*[@id='id_gender1']").click();
+            helper.waitElementClickable(2,"//*[@id='id_gender1']").click();
         } else {
-            helper.waitOnElement(30,"//*[@id='id_gender2']").click();
+            helper.waitElementClickable(2,"//*[@id='id_gender2']").click();
         }
     }
 
