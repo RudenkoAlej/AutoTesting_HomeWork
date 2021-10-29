@@ -10,6 +10,7 @@
         <module name="06_Lesson" />
         <module name="03_Lesson" />
         <module name="05_Lesson" />
+        <module name="07_Lesson" />
         <module name="04_Lesson" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="04_Lesson" target="1.8" />
       <module name="05_Lesson" target="1.8" />
       <module name="06_Lesson" target="1.8" />
+      <module name="07_Lesson" target="1.8" />
       <module name="AutoTesting_HomeWork" target="1.8" />
     </bytecodeTargetLevel>
   </component>
