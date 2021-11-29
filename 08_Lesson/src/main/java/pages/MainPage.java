@@ -23,6 +23,9 @@ public class MainPage {
     @FindBy(xpath = "//ul[starts-with(@class, 'sf-menu')]/li[2]")
     protected WebElement dressesTab;
 
+    @FindBy(xpath = "//ul[starts-with(@class, 'sf-menu')]/li[1]")
+    protected WebElement womanTab;
+
     public MainPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -46,5 +49,10 @@ public class MainPage {
     public DressesPage dressesBtnClick(){
         dressesTab.click();
         return new DressesPage(driver);
+    }
+
+    public WomanPage womanBtnClick(){
+        womanTab.click();
+        return new WomanPage(driver);
     }
 }

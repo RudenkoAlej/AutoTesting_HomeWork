@@ -1,61 +1,42 @@
 package tests;
 
-import model.Account;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.*;
+import pages.attributes.AlreadyRegistered;
 
-import java.util.List;
+import static utils.TestHelper.randomInt;
 
-public class NewTest extends BaseTest{
+public class AlreadyRegisteredTest extends BaseTest{
     private MainPage mainPage;
-    private Account account;
     private SignInPage signInPage;
-    private RegistrationPage registrationPage;
-    private MyAccountPage myAccountPage;
-    private DressesPage dressesPage;
-    private WomanPage womanPage;
-    private SizeOptions sizeOptions;
-    private CartSummaryPage cartSummaryPage;
-    private CartAddressPage cartAddressPage;
-    private CartShippingPage cartShippingPage;
-    private CartPaymentPage cartPaymentPage;
+
 
     @BeforeMethod
     public void openInitialPage() {
         mainPage = new MainPage(driver);
     }
 
-    @Test()
-    public void checkDressesTabIsOpened() {
-        womanPage = mainPage.womanBtnClick();
-
-        Assert.assertTrue(womanPage.isWomanTabSelected());
+    @DataProvider
+    public static Object[][] dataProviderIncorrectCredentials() {
+        return new Object[][]{
+                {"SomeEmail" + randomInt() + "@gmail.com", "Crun" + randomInt()},
+                {"MyFavMail@li.com", "Pass0rd"},
+                {"MyFavMail@li.com", ""},
+                {"", "Pass0rd"},
+                {"", ""}};
     }
 
-    @Test()
-    public void checkFilterPrices() {
+    @Test(dataProvider = "dataProviderIncorrectCredentials")
+    public void checkAlreadyRegisteredWithIncorrectValues(String email, String password) {
+        signInPage = mainPage.clickSignIn()
+                    .setAlreadyRegisteredCredentials(email, password);
+        String actualResult = signInPage.getErrorMessage();
+        String expectedResult = "error";
 
-        womanPage = mainPage.womanBtnClick();
-
-        int minFilterPriceValue = 25;
-        int maxFilterPriceValue = 45;
-
-        womanPage.setMinPriceFilter(minFilterPriceValue);
-        womanPage.setMaxPriceFilter(maxFilterPriceValue);
-
-        List<WebElement> filteredByName = womanPage.allProductsWithName("Dress");
-        List<WebElement> filteredByDiscount = womanPage.allProductsWithDiscount();
-        List<WebElement> filteredByTwoParameters = womanPage.combineProductFilteredElements(filteredByName, filteredByDiscount);
-        womanPage.addAllProducts(filteredByTwoParameters);
-
-        cartSummaryPage = womanPage.openCart();
-
-        double highestPrice = cartSummaryPage.getHighestPrice();
-        cartSummaryPage.deleteProductByPrice(highestPrice);
-
+        Assert.assertTrue(actualResult.contains(expectedResult), "If error is absent then test is failed");
     }
 
 }

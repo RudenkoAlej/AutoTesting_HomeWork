@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(DataProviderRunner.class)
-public class BankAccountTstNGDataProvider {
+public class BankAccountJUnitDataProvider {
     private static BankAccount account = null;
     private float number1;
     private float result;

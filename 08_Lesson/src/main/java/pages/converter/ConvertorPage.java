@@ -1,58 +1,95 @@
-package pages;
+package pages.converter;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import pages.DressesPage;
+import pages.SearchPage;
+import pages.SignInPage;
+import pages.WomanPage;
+import utils.TestHelper;
 
-public class MainPage {
+public class ConvertorPage {
     protected WebDriver driver;
+    private TestHelper helper;
 
-    @FindBy(xpath = "//*[contains(@href,'controller=my-account')]")
-    private WebElement singIn;
+    @FindBy(id = "currency_amount")
+    private WebElement inputSum;
 
-    @FindBy(css = ".editorial_block h1")
-    private WebElement automationLbl;
+    @FindBy(xpath = "//p[@id='UAH']//input[@id='currency_rate']")
+    private WebElement rateUAH;
 
-    @FindBy(xpath = "//input[@name='search_query']")
-    private WebElement findField;
+    @FindBy(xpath = "//p[@id='UAH']//input[@id='currency_exchange']")
+    private WebElement resultUAH;
 
-    @FindBy(xpath = "//button[@name='submit_search']")
-    private WebElement findBtn;
+    @FindBy(xpath = "//p[@id='EUR']//input[@id='currency_rate']")
+    private WebElement rateEUR;
 
-    @FindBy(xpath = "//ul[starts-with(@class, 'sf-menu')]/li[2]")
-    protected WebElement dressesTab;
+    @FindBy(xpath = "//p[@id='EUR']//input[@id='currency_exchange']")
+    private WebElement resultEUR;
 
-    @FindBy(xpath = "//ul[starts-with(@class, 'sf-menu')]/li[1]")
-    protected WebElement womanTab;
+    @FindBy(xpath = "//p[@id='RUB']//input[@id='currency_rate']")
+    private WebElement rateRUB;
 
-    public MainPage(WebDriver driver) {
+    @FindBy(xpath = "//p[@id='RUB']//input[@id='currency_exchange']")
+    private WebElement resultRUB;
+
+    @FindBy(xpath = "//p[@id='PLN']//input[@id='currency_rate']")
+    private WebElement ratePLN;
+
+    @FindBy(xpath = "//p[@id='PLN']//input[@id='currency_exchange']")
+    private WebElement resultPLN;
+
+    private By advert = new By.ByClassName("achernar__closeControl");
+
+    public ConvertorPage(WebDriver driver) {
         this.driver = driver;
+        helper = new TestHelper(driver);
         PageFactory.initElements(driver, this);
     }
 
-    public SignInPage clickSignIn(){
-        singIn.click();
-        return new SignInPage(driver);
+    public ConvertorPage inputSum(String sum){
+//        helper.
+        inputSum.clear();
+        inputSum.sendKeys(sum);
+        return new ConvertorPage(driver);
     }
 
-    public String getAutomationLblText(){
-        return automationLbl.getText();
+    public Double getRateUAH() {
+        return Double.valueOf(rateUAH.getAttribute("value").replaceAll(" ", ""));
     }
 
-    public SearchPage findProduct(String product){
-        findField.sendKeys(product);
-        findBtn.click();
-        return new SearchPage(driver);
+    public Double getResultUAH() {
+
+        return Double.valueOf(resultUAH.getAttribute("value").replaceAll(" ", ""));
     }
 
-    public DressesPage dressesBtnClick(){
-        dressesTab.click();
-        return new DressesPage(driver);
+    public Double getRateEUR() {
+        return Double.valueOf(rateEUR.getAttribute("value").replaceAll(" ", ""));
     }
 
-    public WomanPage womanBtnClick(){
-        womanTab.click();
-        return new WomanPage(driver);
+    public Double getResultEUR() {
+
+        return Double.valueOf(resultEUR.getAttribute("value").replaceAll(" ", ""));
+    }
+
+    public Double getRateRUB() {
+        return Double.valueOf(rateRUB.getAttribute("value").replaceAll(" ", ""));
+    }
+
+    public Double getResultRUB() {
+
+        return Double.valueOf(resultRUB.getAttribute("value").replaceAll(" ", ""));
+    }
+
+    public Double getRatePLN() {
+        return Double.valueOf(ratePLN.getAttribute("value").replaceAll(" ", ""));
+    }
+
+    public Double getResultPLN() {
+
+        return Double.valueOf(resultPLN.getAttribute("value").replaceAll(" ", ""));
     }
 }

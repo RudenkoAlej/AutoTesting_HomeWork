@@ -1,15 +1,14 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.TestHelper;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CartSummaryPage extends SearchPage {
@@ -46,6 +45,8 @@ public class CartSummaryPage extends SearchPage {
     private WebElement proceedToCheckoutBtn;
 
     protected String PROD_NAME_BY_TEXT = "//p[@class='product-name']/a[text()='";
+
+    private String TOTAL_PRICE = "//td[@class='cart_total']/span";
 
     public CartSummaryPage quantityIncreaseWithPlus(String productName) {
         WebElement quantityPlus = driver.findElement(By.xpath(PROD_NAME_BY_TEXT + productName + "']/../../..//a[@title='Add']"));
@@ -128,13 +129,24 @@ public class CartSummaryPage extends SearchPage {
         return total;
     }
 
-    public CartSummaryPage deleteProduct(String productName) {
+    public CartSummaryPage deleteProductByName(String productName) {
         WebElement productDeleteEl = driver.findElement(By.xpath(PROD_NAME_BY_TEXT + productName +
                 "']/../../..//a[@title='Delete']"));
         productDeleteEl.click();
         return this;
 
     }
+
+    public CartSummaryPage deleteProductByPrice(double price) {
+        List<WebElement> totalPrices = driver.findElements(By.xpath(TOTAL_PRICE));
+        for (WebElement el: totalPrices) {
+            if (el.getText().contains(String.valueOf(price))) {
+                el.findElement(By.xpath("ancestor-or-self::tr//a[@title='Delete']")).click();
+                helper.waitForSeconds(2);
+            }
+        }
+        return new CartSummaryPage(driver);
+     }
 
     public String getShoppingChartEmptyMessage() {
         helper.waitElementClickable(2, shoppingChartEmptyMessageEl);
@@ -150,6 +162,20 @@ public class CartSummaryPage extends SearchPage {
             ex.printStackTrace();
             return false;
         }
+    }
+
+    public boolean productIsInChart(Double productPrice) {
+        List<WebElement> elements = driver.findElements(By.xpath(TOTAL_PRICE));
+        Boolean present = false;
+        for (WebElement element : elements) {
+               if (element.getText().contains("$"+productPrice)) {
+                present = true;
+               break;
+        } else {
+                present = false;
+            }
+        }
+        return present;
     }
 
     public boolean isProductInChart(String str) {
@@ -175,5 +201,17 @@ public class CartSummaryPage extends SearchPage {
         helper.waitElementDisplayed(5, proceedToCheckoutBtn);
         proceedToCheckoutBtn.click();
         return new CartAddressPage(driver);
+    }
+
+
+    public double getHighestPrice() {
+        double highestPrice;
+        List<WebElement> totalPrices = driver.findElements(By.xpath(TOTAL_PRICE));
+        List<Double> pricesValues = new ArrayList<>();
+        for (WebElement price: totalPrices) {
+            double value = Double.parseDouble(price.getText().substring(1));
+            pricesValues.add(value);
+        }
+        return highestPrice = Collections.max(pricesValues);
     }
 }

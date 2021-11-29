@@ -60,4 +60,20 @@ public class TestHelper {
         String s = el.getAttribute("class");
         return s.equals("selected");
     }
+
+    public void clickOnElement(WebElement el) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", el);
+    }
+
+    public boolean isElementExists(By by) {
+        boolean isExists;
+        if (driver.findElements(by).size() != 0) {
+            isExists = true;
+        }
+        else {
+            isExists = false;
+        }
+        return isExists;
+    }
 }

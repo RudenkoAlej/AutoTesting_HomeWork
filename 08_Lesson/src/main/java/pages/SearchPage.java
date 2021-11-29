@@ -3,10 +3,15 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import utils.TestHelper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 public class SearchPage extends MainPage{
     private TestHelper helper;
@@ -35,6 +40,9 @@ public class SearchPage extends MainPage{
     @FindBy(xpath = "//*[@class='ajax_cart_no_product']")
     private WebElement emptyChart;
 
+    @FindBy(xpath = "//*[@title='View my shopping cart']")
+    private WebElement cartIcon;
+
     private String sizeSelector =  "//a[text() = ";
 
     private String sizeCheckBoxSelector = "]//ancestor::li/div/span";
@@ -56,9 +64,18 @@ public class SearchPage extends MainPage{
         }
     }
 
+    public boolean isWomanTabSelected() {
+        String womanTabAttribute = womanTab.getAttribute("class");
+        if (womanTabAttribute.equals("sfHoverForce")) {
+            return true;
+        }else  {
+            return false;
+        }
+    }
+
     public SearchPage listModeOn() {
-        listModeIcon.click();
-        helper.waitForSeconds(2);
+        helper.waitElementClickable(5, listModeIcon).click();
+//        helper.waitForSeconds(5);
         return this;
     }
 
@@ -88,10 +105,20 @@ public class SearchPage extends MainPage{
         return new CartSummaryPage(driver);
     }
 
-    public SearchPage continueShopping() {
+    public void continueShoppingClick() {
         helper.waitElementDisplayed(10, continueShoppingBtn);
         continueShoppingBtn.click();
+    }
+
+    public SearchPage continueShopping() {
+        continueShoppingClick();
         return new SearchPage(driver);
+    }
+
+    public CartSummaryPage openCart() {
+        helper.waitElementDisplayed(5, cartIcon);
+        cartIcon.click();
+        return new CartSummaryPage(driver);
     }
 
 
@@ -149,7 +176,7 @@ public class SearchPage extends MainPage{
 
     public SearchPage addFirstProductAction() {
         String addButtonSelector = firstProductContainerSelector + productButtonSelector;
-        driver.findElement(By.xpath(addButtonSelector)).click();
+        driver.findElement(By.xpath(addButtonSelector)). click();
         return new SearchPage(driver);
     }
 
@@ -176,4 +203,48 @@ public class SearchPage extends MainPage{
         }
 
     }
+
+    public List<WebElement> allProductsWithName(String productName) {
+        List<WebElement> webElementList = new ArrayList<>();
+        for (WebElement element: driver.findElements(By.xpath("//div[@class='right-block']//a[contains(text(), '"+ productName +"')]/../../..//img"))) {
+            webElementList.add(element);
+        }
+            return webElementList;
+    }
+
+    public List<WebElement> allProductsWithDiscount() {
+        List<WebElement> webElementList = new ArrayList<>();
+        for (WebElement element: driver.findElements(By.xpath("//div[@class='right-block']//span[@class='price-percent-reduction']//ancestor-or-self::div[@class='product-container']//img"))) {
+            webElementList.add(element);
+        }
+        return webElementList;
+    }
+
+    public List<WebElement> combineProductFilteredElements(List<WebElement> arrayName, List<WebElement> arrayDiscount) {
+        List<WebElement> webElementList = new ArrayList<>();
+
+        for (WebElement el: arrayName) {
+            for (WebElement el2: arrayDiscount) {
+                if (el.getAttribute("src").equals(el2.getAttribute("src"))) {
+                    webElementList.add(el);
+                }
+            }
+        }
+        return webElementList;
+    }
+
+    public SearchPage addAllProducts(List<WebElement> elementsToAdd) {
+
+        for (WebElement el: elementsToAdd) {
+            WebElement productContainer = el.findElement(By.xpath("ancestor-or-self::div[@class='product-container']"));
+            helper.waitElementDisplayed(5, productContainer);
+            Actions move = new Actions(driver);
+            move.moveToElement(productContainer).perform();
+            WebElement addToCartBtn = productContainer.findElement(By.xpath("descendant::a[@title='Add to cart']"));
+            addToCartBtn.click();
+            continueShoppingClick();
+        }
+        return new SearchPage(driver);
+    }
+
 }

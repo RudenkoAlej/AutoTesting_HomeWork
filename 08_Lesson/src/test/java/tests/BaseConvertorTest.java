@@ -10,7 +10,7 @@ import utils.Config;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public abstract class BaseTest {
+public abstract class BaseConvertorTest {
     public WebDriver driver;
     public final Properties config = Config.loadProperties("resource.properties");
 
@@ -19,10 +19,10 @@ public abstract class BaseTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", config.getProperty("chromedriver"));
         driver = new ChromeDriver();
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+//        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(config.getProperty("baseurl"));
+        driver.get(config.getProperty("baseConverterUrl"));
         }
 
     @AfterMethod
