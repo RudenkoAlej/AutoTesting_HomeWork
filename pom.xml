@@ -14,6 +14,8 @@
         <module>04_Lesson</module>
         <module>05_Lesson</module>
         <module>06_Lesson</module>
+        <module>07_Lesson</module>
+        <module>08_Lesson</module>
 
     </modules>
     <build>

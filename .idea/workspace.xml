@@ -9,40 +9,61 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Lesson_06_1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Lesson_07_2" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f872f96-3ded-4ad7-96b3-84674eac08ee" name="Default Changelist" comment="Lesson 07.1 Registration Page test new created account">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06_Lesson/src/test/java/CartTest.java" afterDir="false" />
+    <list default="true" id="7f872f96-3ded-4ad7-96b3-84674eac08ee" name="Default Changelist" comment="Lesson 07 (Presentation) Cart tabs test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_2_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rauschig_jarchivelib_0_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_0_0_beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/model/AccountBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartAddressPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartPaymentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartShippingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartSummaryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/DressesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/SignInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/SizeOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/WomanPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/attributes/AlreadyRegistered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/attributes/CreateAccountAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/pages/converter/ConvertorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/utils/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/java/utils/TestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/main/resources/resource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/test/java/tests/AlreadyRegisteredTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/test/java/tests/BaseConvertorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/test/java/tests/CurrencyConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/src/test/java/tests/ShopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_Lesson/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/attributes/CreateAccountAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/pages/attributes/CreateAccountAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/main/java/utils/TestHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/main/java/utils/TestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/main/resources/resource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/main/resources/resource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_Lesson/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_Lesson/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_Lesson/src/test/java/BankAccountTstNGDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_Lesson/src/test/java/BankAccountJUnitDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/attributes/AlreadyRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/05_Lesson/src/main/java/pages/attributes/AlreadyRegistered.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +73,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_06_2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -84,21 +111,44 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/06_Lesson/src/test/java" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/08_Lesson/src/main/java/utils" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Data\AutoTesting_HomeWork\08_Lesson\src\main\java\utils" />
+      <recent name="C:\Data\AutoTesting_HomeWork\08_Lesson\src\main\java\pages" />
+      <recent name="C:\Data\AutoTesting_HomeWork\07_Lesson\src\main\resources" />
+      <recent name="C:\Data\AutoTesting_HomeWork\07_Lesson\src\main\java" />
       <recent name="C:\Data\AutoTesting_HomeWork\06_Lesson\src\test\java" />
-      <recent name="C:\Data\AutoTesting_HomeWork\06_Lesson\src\main\resources" />
-      <recent name="C:\Data\AutoTesting_HomeWork\06_Lesson\src\main\java\utils" />
-      <recent name="C:\Data\AutoTesting_HomeWork\06_Lesson\src\main\java\pages\attribute" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages.converter" />
+      <recent name="tests" />
+      <recent name="pages" />
+      <recent name="model" />
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartTest.checkTotalProductEqual">
+  <component name="RunManager" selected="TestNG.ShopTest">
+    <configuration name="BankAccountJUnitDataProvider" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="03_Lesson" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountJUnitDataProvider" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="03_Lesson" />
       <useClassPathOnly />
@@ -123,84 +173,112 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankAccountTstNGDataProvider" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="03_Lesson" />
-      <useClassPathOnly />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankAccountTstNGDataProvider" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
+    <configuration name="AlreadyRegisteredTest.checkAlreadyRegisteredWithIncorrectValues" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="08_Lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AlreadyRegisteredTest" />
+      <option name="METHOD_NAME" value="checkAlreadyRegisteredWithIncorrectValues" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="06_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="ShopTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="08_Lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ShopTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.checkAddingProductToChart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="06_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
-      <option name="METHOD_NAME" value="checkAddingProductToChart" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="ShopTest.checkCartIsOpened" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="08_Lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ShopTest" />
+      <option name="METHOD_NAME" value="checkCartIsOpened" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.checkCartIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="06_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
-      <option name="METHOD_NAME" value="checkCartIsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="ShopTest.checkProductDelete" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="08_Lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ShopTest" />
+      <option name="METHOD_NAME" value="checkProductDelete" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.checkIncreaseQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="06_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
-      <option name="METHOD_NAME" value="checkIncreaseQuantity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.checkTotalProductEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="06_Lesson" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CartTest" />
-      <option name="METHOD_NAME" value="checkTotalProductEqual" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="ShopTest.checkWomanTabPriceFilter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="08_Lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ShopTest" />
+      <option name="METHOD_NAME" value="checkWomanTabPriceFilter" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.BankAccountJUnitDataProvider" />
       <item itemvalue="JUnit.BankAccountTestDataProvider" />
       <item itemvalue="JUnit.BankAccountTest" />
-      <item itemvalue="JUnit.BankAccountTstNGDataProvider" />
-      <item itemvalue="JUnit.CartTest.checkAddingProductToChart" />
-      <item itemvalue="JUnit.CartTest" />
-      <item itemvalue="JUnit.CartTest.checkIncreaseQuantity" />
-      <item itemvalue="JUnit.CartTest.checkCartIsEmpty" />
-      <item itemvalue="JUnit.CartTest.checkTotalProductEqual" />
+      <item itemvalue="TestNG.AlreadyRegisteredTest.checkAlreadyRegisteredWithIncorrectValues" />
+      <item itemvalue="TestNG.ShopTest" />
+      <item itemvalue="TestNG.ShopTest.checkCartIsOpened" />
+      <item itemvalue="TestNG.ShopTest.checkProductDelete" />
+      <item itemvalue="TestNG.ShopTest.checkWomanTabPriceFilter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CartTest.checkTotalProductEqual" />
-        <item itemvalue="JUnit.CartTest" />
-        <item itemvalue="JUnit.CartTest.checkCartIsEmpty" />
-        <item itemvalue="JUnit.CartTest.checkIncreaseQuantity" />
-        <item itemvalue="JUnit.CartTest.checkAddingProductToChart" />
+        <item itemvalue="TestNG.ShopTest" />
+        <item itemvalue="TestNG.ShopTest.checkCartIsOpened" />
+        <item itemvalue="TestNG.ShopTest.checkProductDelete" />
+        <item itemvalue="TestNG.ShopTest.checkWomanTabPriceFilter" />
+        <item itemvalue="TestNG.AlreadyRegisteredTest.checkAlreadyRegisteredWithIncorrectValues" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628547373456</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lesson 07.1 Cart Page test with adding and removing product">
+      <created>1629410638011</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629410638011</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Lesson 07 (Presentation) Cart tabs test">
+      <created>1635546280500</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635546280500</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +368,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Lesson_06_1" />
+                        <option value="Lesson_07_2" />
                       </list>
                     </value>
                   </entry>
@@ -294,7 +386,7 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="Lesson_07_1" />
+                  <option value="HEAD" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -305,6 +397,11 @@
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Lesson_07_1" />
                 </option>
               </RecentGroup>
             </list>
@@ -322,136 +419,174 @@
     <MESSAGE value="Registration Page selectors" />
     <MESSAGE value="Registration Page test error message" />
     <MESSAGE value="Lesson 06.1 Registration Page test new created account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 06.1 Registration Page test new created account" />
+    <MESSAGE value="Lesson 07.1 Cart Page test with adding and removing product" />
+    <MESSAGE value="Lesson 07 (Presentation) Cart tabs test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 07 (Presentation) Cart tabs test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="447" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627821620854">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1637670377259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627821620854" />
-    <state x="447" y="111" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1627505958236" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1628808033718">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1637670377259" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634990868476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628808033718" />
-    <state x="816" y="320" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1627426250012">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1634990868476" />
+    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1636234286196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="816" y="320" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1627426250012" />
-    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628372889091">
+    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1636234286196" />
+    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1635259481895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="455" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1628372889091" />
-    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1629409893306">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1629409893306" />
-    <state x="-1205" y="247" key="#xdebugger.evaluate" timestamp="1629197427983">
+    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1635259481895" />
+    <state x="-1172" y="494" width="1005" height="586" key="#xdebugger.evaluate" timestamp="1638174613024">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1205" y="247" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629197427983" />
-    <state x="572" y="188" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629122008144" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1627427382827">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1627427382827" />
-    <state x="861" y="218" key="EnvironmentVariablesDialog" timestamp="1627505277010">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="861" y="218" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1627505277010" />
-    <state x="966" y="308" key="FileChooserDialogImpl" timestamp="1628286562306">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627464729477" />
-    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1628286562306" />
-    <state x="511" y="313" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1628547807632">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="511" y="313" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1628547807632" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1629410152167">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753166" />
-    <state width="1493" height="344" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131500" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629410152167" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1629410152167">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753166" />
-    <state width="1493" height="344" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131500" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1629410152167" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1629410152167">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753166" />
-    <state width="1493" height="344" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131500" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1629410152167" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1629410152167">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753166" />
-    <state width="1493" height="344" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131500" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1629410152167" />
-    <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1629312753151">
+    <state x="-1172" y="494" width="1005" height="586" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638174613024" />
+    <state x="661" y="72" key="#xdebugger.evaluate/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1637521112693" />
+    <state x="870" y="106" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1638052982844" />
+    <state width="420" height="466" key="DebuggerActiveHint" timestamp="1638171823275">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753151" />
-    <state width="1493" height="344" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131293" />
-    <state width="1493" height="360" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1629151658724" />
-    <state width="1877" height="344" key="GridCell.Tab.1.center" timestamp="1629312753151">
+    <state width="420" height="466" key="DebuggerActiveHint/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638171823275" />
+    <state x="966" y="308" key="FileChooserDialogImpl" timestamp="1637842087856">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629724426636" />
+    <state x="966" y="308" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1637842087856" />
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1638203521925">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753151" />
-    <state width="1493" height="344" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131293" />
-    <state width="1493" height="360" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1629151658724" />
-    <state width="1877" height="344" key="GridCell.Tab.1.left" timestamp="1629312753151">
+    <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638203521925" />
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638203421690" />
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1638203521925">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753151" />
-    <state width="1493" height="344" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131293" />
-    <state width="1493" height="360" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1629151658724" />
-    <state width="1877" height="344" key="GridCell.Tab.1.right" timestamp="1629312753151">
+    <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638203521925" />
+    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638203421690" />
+    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1638203521924">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629312753151" />
-    <state width="1493" height="344" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629278131293" />
-    <state width="1493" height="360" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1629151658724" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1627464203716">
+    <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638203521924" />
+    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638203421690" />
+    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1638203521925">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638203521925" />
+    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638203421690" />
+    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="245" key="GridCell.Tab.1.bottom" timestamp="1638178666328">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638178666328" />
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638171685572" />
+    <state width="1493" height="245" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1638053853833" />
+    <state width="1877" height="245" key="GridCell.Tab.1.center" timestamp="1638178666327">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638178666327" />
+    <state width="1493" height="245" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638171685572" />
+    <state width="1493" height="245" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="245" key="GridCell.Tab.1.left" timestamp="1638178666327">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638178666327" />
+    <state width="1493" height="245" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638171685571" />
+    <state width="1493" height="245" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state width="1877" height="245" key="GridCell.Tab.1.right" timestamp="1638178666328">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1638178666328" />
+    <state width="1493" height="245" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1638171685572" />
+    <state width="1493" height="245" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1638053853832" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1634828839619">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627464203716" />
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627426656216" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1628547729761">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1634828839619" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635546346771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627892367233" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1628547729761" />
-    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1627424128360">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635546346771" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1637446398843">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1627424128360" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628547831658">
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1637446398843" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636233065267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627479473650" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1628547831658" />
-    <state x="209" y="73" key="new project wizard" timestamp="1628375204138">
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1636233065267" />
+    <state x="334" y="145" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1636319116852">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="73" key="new project wizard/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1627480128843" />
-    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1628375204138" />
-    <state x="586" y="200" key="refactoring.ChangeSignatureDialog" timestamp="1629409851158">
+    <state x="334" y="145" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1636319116852" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1634674547093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-1187" y="262" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1629279681062" />
-    <state x="-1187" y="262" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629279713311" />
-    <state x="586" y="200" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1629409851158" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1628546297227">
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1634674547093" />
+    <state x="209" y="73" key="new project wizard" timestamp="1636233417280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1628546297227" />
+    <state x="369" y="109" key="new project wizard/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1629822569549" />
+    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1636233417280" />
+    <state x="-1187" y="262" width="413" height="504" key="refactoring.ChangeSignatureDialog" timestamp="1634990871986">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1187" y="262" width="413" height="504" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1080@0.0.1536.824" timestamp="1634990871986" />
+    <state x="586" y="200" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1634587891612" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1634587980771">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1634587980771" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/utils/TestHelper.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/utils/TestHelper.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/utils/TestHelper.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartSummaryPage.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/pages/CartSummaryPage.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_Lesson/src/main/java/pages/SearchPage.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((RemoteWebElement)this).foundBy" custom="org.openqa.selenium.remote.RemoteWebElement" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AutoTesting_HomeWork$ChartTest_checkChart.ic" NAME="ChartTest.checkChart Coverage Results" MODIFIED="1628946813828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AutoTesting_HomeWork$ShopTest_checkFilterPrices.ic" NAME="ShopTest.checkFilterPrices Coverage Results" MODIFIED="1637336733597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tests.*</FILTER>
+    </SUITE>
   </component>
 </project>
