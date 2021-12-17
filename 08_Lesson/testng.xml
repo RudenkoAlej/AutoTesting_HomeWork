@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CrossBrowserTest" parallel="false" thread-count="1">
+    <test name="ChromeTest">
+        <parameter name="brows00er" value="chrome"/>
+        <classes>
+            <class name="tests.ShopTest"/>
+            <class name="tests.AlreadyRegisteredTest" />
+            <class name="tests.CurrencyConverterTest" />
+        </classes>
+    </test>
+    <!--    <test name="FirefoxTest">-->
+    <!--        <parameter name="browser" value="firefox"/>-->
+    <!--        <classes>-->
+    <!--            <class name="tests.RegistrationTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>
